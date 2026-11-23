@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guía de secretos de GTA 6</title>
+<meta name="description" content="Controles, vehículos, coleccionables, policía, mapas y secretos de GTA 6 en una sola guía escrita.">
+<style>
+:root{--bg:#10121c;--panel:#191c2a;--panel2:#222638;--line:#30354b;--text:#eceef6;--muted:#a4aac0;--hot:#ff6f91;--sun:#ffc15e;--sea:#3fd6c8;--r:10px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 "Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif}
+a{color:var(--sea)}img{display:block;max-width:100%;height:auto}
+.top{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:16px;padding:10px 20px;background:#10121cf2;border-bottom:1px solid var(--line)}
+.brand{font-weight:800;color:var(--text);text-decoration:none;white-space:nowrap}.brand b{color:var(--hot)}
+.top input{margin-left:auto;width:min(320px,48vw);padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:inherit}
+.menu-btn{display:none;background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:7px 11px;font:inherit}
+.layout{display:grid;grid-template-columns:230px minmax(0,1fr);max-width:1240px;margin:auto}
+nav{position:sticky;top:58px;align-self:start;height:calc(100vh - 58px);overflow:auto;padding:20px 10px 20px 20px}
+nav a{display:block;padding:6px 10px;border-radius:7px;color:var(--muted);text-decoration:none;font-size:15px}
+nav a:hover,nav a.on{background:var(--panel2);color:var(--text)}
+main{padding:24px 24px 70px;min-width:0}
+.hero{padding:34px 0 22px;border-bottom:1px solid var(--line)}
+.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.05;margin:0 0 12px;letter-spacing:-.02em}.hero h1 span{color:var(--sun)}
+.hero p{max-width:68ch;color:var(--muted);margin:0}
+section{padding:38px 0 8px}h2{font-size:29px;line-height:1.2;margin:0 0 6px}h3{font-size:19px;line-height:1.3;margin:0 0 6px}
+.lead{color:var(--muted);margin:0 0 18px;max-width:72ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px}.card p{margin:0;color:#d4d7e6}
+.card small{color:var(--muted)}.tag{display:inline-block;font-size:12px;font-weight:700;color:#14151f;background:var(--sun);border-radius:5px;padding:1px 7px;margin-bottom:7px}
+.tbl{overflow:auto;border:1px solid var(--line);border-radius:var(--r)}table{width:100%;border-collapse:collapse;background:var(--panel)}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}th{background:var(--panel2);font-size:14px}
+td small{display:block;color:var(--muted)}kbd{display:inline-block;background:var(--panel2);border:1px solid #474e6b;border-bottom-width:2px;border-radius:5px;padding:0 6px;font:600 14px/1.5 "Segoe UI",sans-serif;white-space:nowrap}
+.seg{display:inline-flex;margin-bottom:14px;border:1px solid var(--line);border-radius:8px;overflow:hidden}.seg button,.tabs button{background:var(--panel);color:var(--muted);border:0;padding:8px 15px;font:600 14px "Segoe UI",sans-serif;cursor:pointer}
+.seg button.on,.tabs button.on{background:var(--hot);color:#1a1020}
+.steps{margin:0;padding-left:22px}.steps li{margin:4px 0}.note{border-left:3px solid var(--sun);background:#2a2619;padding:9px 13px;border-radius:0 8px 8px 0;margin:12px 0 0;font-size:15px}
+.code{font:700 19px Consolas,monospace;color:var(--sea)}
+.car{padding:0;overflow:hidden}.car img{width:100%;aspect-ratio:988/1100;object-fit:cover;background:#000}.car div{padding:13px 15px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}.tabs button{border:1px solid var(--line);border-radius:7px}
+.map{display:grid;grid-template-columns:minmax(0,520px) minmax(220px,1fr);gap:18px;align-items:start}.map img{border-radius:var(--r);border:1px solid var(--line)}
+.check{display:flex;gap:11px;align-items:flex-start;cursor:pointer}.check input{width:19px;height:19px;margin-top:4px;accent-color:var(--hot);flex:none}.check:has(input:checked) b{text-decoration:line-through;color:var(--muted)}
+.bar{height:9px;background:var(--panel2);border-radius:9px;overflow:hidden;margin:0 0 14px}.bar i{display:block;height:100%;width:0;background:var(--sea);transition:width .2s}
+details{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:12px 16px;margin-bottom:10px}summary{cursor:pointer;font-weight:700;font-size:18px}details[open] summary{margin-bottom:9px}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+.hide{display:none!important}#empty{padding:30px 0;color:var(--muted)}
+:focus-visible{outline:2px solid var(--sun);outline-offset:2px}
+@media(max-width:860px){.layout{display:block}.menu-btn{display:block}nav{display:none;position:fixed;inset:57px 0 0;z-index:9;height:auto;background:var(--bg);padding:14px}nav.open{display:block}main{padding:14px 16px 60px}.map{grid-template-columns:minmax(0,1fr)}.grid{grid-template-columns:minmax(0,1fr)}.top{gap:10px;padding:10px 12px}.top input{min-width:0;flex:1;width:auto}.brand span{display:none}table{min-width:560px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+  <a class="brand" href="#inicio">Secretos <b>GTA 6</b><span> · guía</span></a>
+  <input id="q" type="search" placeholder="Buscar: código, coche, carta…" aria-label="Buscar en la guía">
+</header>
+<div class="layout">
+<nav id="nav" aria-label="Secciones"></nav>
+<main>
+<div class="hero" id="inicio">
+  <h1>Todo lo que el juego <span>no te explica</span></h1>
+  <p>Controles ocultos, coches secretos, cartas, códigos, policía y mapas, recopilados en una guía escrita. Usa el buscador de arriba para encontrar cualquier dato al momento.</p>
+</div>
+
+<section id="controles"><h2>Controles ocultos</h2>
+<p class="lead">Son los controles por defecto. Elige tu consola y la tabla cambia.</p>
+<div class="seg" role="group" aria-label="Consola"><button data-pad="ps" class="on">PS5</button><button data-pad="xb">Xbox</button></div>
+<div class="tbl"><table><thead><tr><th>Acción</th><th>Botones</th><th>Qué hace</th></tr></thead><tbody id="ctlBody"></tbody></table></div>
+<p class="note">En el vídeo de botones también aparecen, solo para PS5: sentarte en cualquier sitio manteniendo <kbd>○</kbd> a pie, y apuntar a una persona con <kbd>L2</kbd> + <kbd>R1</kbd>. El efecto exacto de este último no se pudo confirmar.</p>
+</section>
+
+<section id="claves"><h2>9 claves para tus coches</h2><p class="lead">Lo básico para encontrar, conservar y proteger un vehículo.</p><div class="grid" id="keys"></div></section>
+
+<section id="ajustes"><h2>Mejorar la conducción</h2>
+<p class="lead">Si el coche patina como sobre jabón, el problema puede estar en la configuración de fábrica del mando.</p>
+<div class="card"><ol class="steps"><li>Abre el menú y entra en <b>Ajustes</b>.</li><li>Ve a la pestaña <b>Mando</b>.</li><li>Baja hasta <b>Funciones del mando inalámbrico DualSense</b>.</li><li>Sube los valores de <b>Zona muerta (joystick izquierdo)</b> y <b>Zona muerta (joystick derecho)</b>.</li></ol></div>
+</section>
+
+<section id="hud"><h2>Indicadores de la pantalla</h2><p class="lead">Qué significa cada barra e icono.</p><div class="grid" id="hudGrid"></div></section>
+
+<section id="policia"><h2>Policía y estrellas</h2><p class="lead">El estado de la búsqueda cambia según lo que la policía sabe de ti.</p><div class="grid" id="stars"></div>
+<h3 style="margin-top:26px">Cómo te identifican y cómo evitarlo</h3><div class="tbl"><table><thead><tr><th>Pista</th><th>Qué pasa</th><th>Cómo quitártela</th></tr></thead><tbody id="ids"></tbody></table></div></section>
+
+<section id="perfil"><h2>Perfil criminal e impactos</h2><p class="lead">El juego también tendría en cuenta cómo decides actuar.</p><div class="grid" id="profile"></div></section>
+
+<section id="mapa"><h2>Mapa de Key Lento</h2><p class="lead">Elige una categoría para ver dónde está cada cosa en la isla.</p><div class="tabs" id="mapTabs"></div>
+<div class="map"><img id="mapImg" width="720" height="720" alt=""><div class="card"><h3 id="mapTitle"></h3><p id="mapText"></p></div></div></section>
+
+<section id="coches"><h2>Coches secretos</h2><p class="lead">Siete vehículos especiales con su ubicación. La imagen muestra el coche y su punto en el mapa.</p><div class="grid" id="cars"></div>
+<h3 style="margin-top:26px">Dodge Charger 1970 de película</h3>
+<div class="card"><ol class="steps"><li>Abre el mapa y busca <b>Grayson</b>, al suroeste del condado, junto a San Malo Bay.</li><li>Ve al punto marcado y encuentra el coche azul oxidado entre la vegetación.</li><li>Llévalo al taller de <b>Moses</b>.</li><li>Personalízalo en negro con el motor sobrealimentado para dejarlo como el de la saga.</li></ol></div>
+<h3 style="margin-top:26px">Coche y garaje gratis</h3>
+<div class="card"><span class="tag">Antes de terminar el capítulo 3</span><ol class="steps"><li>En el capítulo 3, entra al cuarto de la casa nueva y usa la laptop.</li><li>Escribe la contraseña <span class="code">MUFFINS-QUEEN-15</span>, con los guiones.</li><li>Abre los mensajes y entra en el chat <b>Desconocido</b> para obtener el código.</li><li>Ve al garaje de <b>La Perle</b> y marca el código en el teclado.</li><li>El coche de dentro es tuyo.</li></ol><p class="note">Según el vídeo, si terminas el capítulo 3 sin hacerlo, lo pierdes para siempre.</p></div>
+</section>
+
+<section id="cartas"><h2>11 cartas coleccionables</h2><p class="lead">Marca las que ya tienes. Se guardan en este navegador. Puedes venderlas en la casa de empeños de Hamlet o quedártelas.</p><div class="bar"><i id="bar"></i></div><p id="count" style="margin:-6px 0 12px;color:var(--muted)"></p><div class="grid" id="cardsGrid"></div>
+<div class="card" style="margin-top:14px"><span class="tag">Carta extra</span><h3>Caja fuerte de la caravana</h3><p>En una caravana del condado de Mariana hay una caja fuerte con una carta <b>Superiors</b>. Código: <span class="code">44017</span></p></div></section>
+
+<section id="secretos"><h2>Secretos y easter eggs</h2><p class="lead">Contiene spoilers de misiones secundarias.</p><div id="secrets"></div></section>
+
+<footer id="fuentes"><b>Fuentes y aviso.</b> Guía no oficial, sin relación con Rockstar Games ni Take-Two. Las marcas y capturas pertenecen a sus dueños. Contenido recopilado de publicaciones de @jotagarciatech, Kali/Play, Yue Gaming, @andrei.gta, Ice Blazz, Rioka y Project VI vía Arekkz Gaming, entre otros creadores. Algunos datos proceden de publicaciones de la comunidad y pueden cambiar con actualizaciones.</footer>
+<p id="empty" class="hide">No hay resultados para esa búsqueda.</p>
+</main>
+</div>
+<script>
+const $=s=>document.querySelector(s),k=x=>x.split(' ').map(t=>/^[+→]$|^x2$/.test(t)?(t==='x2'?'×2':t):`<kbd>${t.replaceAll('_',' ')}</kbd>`).join(' ');
+const nav=[['controles','Controles'],['claves','Claves de coches'],['ajustes','Mejorar conducción'],['hud','Indicadores'],['policia','Policía y estrellas'],['perfil','Perfil criminal'],['mapa','Mapa Key Lento'],['coches','Coches secretos'],['cartas','Cartas'],['secretos','Secretos'],['fuentes','Fuentes']];
+$('#nav').innerHTML=nav.map(([a,b])=>`<a href="#${a}">${b}</a>`).join('');
+const ctl=[['Bajar sin apagar el motor','△ x2','Y x2','Motor, luces y radio siguen encendidos.'],['Barco sin capitán','△ x2','Y x2','El barco sigue navegando mientras caminas por la cubierta.'],['Portazo o patada','□','X','Abre la puerta en marcha y golpea a quien esté al lado. En moto, da una patada.'],['Gritar (road rage)','R3','RS','Insulta a otros conductores.'],['Radio on/off','← x2','← x2','La enciende o apaga sin abrir las emisoras.'],['Luces','○','B','Cambia entre apagadas, cortas y largas.'],['Intermitentes','← / →','← / →','Un toque hacia el lado al que giras. Los coches de la IA reaccionan.'],['Menú del coche','Mantén_← + Stick_der._↑','Mantén_← + Stick_der._↑','Ventanillas, capota, luces y warning, según el vehículo.'],['Hablar desde el coche','Mantén_↑','Mantén_↑','Las mismas opciones de interacción que a pie.'],['Esconderte','Mantén_○','Mantén_B','Te agachas dentro del coche mientras te buscan.'],['Conducción automática','Mantén_↓ + Options → Mantén_○','Mantén_↓ + Menú → Mantén_B','Pon un destino y suelta. Funciona en barcos. L2/R2 (LT/RT) cambian la velocidad.'],['Navegación rápida','Mantén_↓','Mantén_↓','Muestra sitios cercanos y traza la ruta sin abrir el mapa.'],['Empujar el coche','L3 → Mantén_□','LS → Mantén_X','Pégate al lateral. Endereza coches y desencalla barcos y motos de agua.']];
+let pad='ps';const drawCtl=()=>$('#ctlBody').innerHTML=ctl.map(c=>`<tr><td><b>${c[0]}</b></td><td>${k(c[pad==='ps'?1:2]).replace('<kbd>/</kbd>','/')}</td><td>${c[3]}</td></tr>`).join('');drawCtl();
+document.querySelectorAll('[data-pad]').forEach(b=>b.onclick=()=>{pad=b.dataset.pad;document.querySelectorAll('[data-pad]').forEach(x=>x.classList.toggle('on',x===b));drawCtl()});
+const cards=(id,a)=>$(id).innerHTML=a.map(([t,p])=>`<article class="card"><h3>${t}</h3><p>${p}</p></article>`).join('');
+cards('#keys',[['1. Escanéalo con el móvil','La app Waink te dice su seguridad, cuánto vale y cuánto cuesta registrarlo.'],['2. Ojo con la gasolina','Los coches tienen depósito. Si se vacía en plena huida, te quedas tirado.'],['3. Usa intermitentes','Un toque a izquierda o derecha en la cruceta y el tráfico reacciona.'],['4. Menú oculto','Mantén izquierda en la cruceta y empuja el stick arriba para capota, luces y ventanillas.'],['5. Golpe con la puerta','Conduciendo, Cuadrado lanza la puerta contra motoristas o quien intenta sacarte.'],['6. Empújalo tú mismo','Si vuelcas, mantén Cuadrado y lo enderezas sin pagar grúa.'],['7. Píntalo y despístalos','La policía recuerda tu coche. Cambia el color y les pierdes la pista.'],['8. Regístralo','Lleva el coche robado a Moses y lo registras para quedártelo para siempre.'],['9. Coche a domicilio','Con la app Scooter Bros te lo traen en segundos, estés donde estés.']]);
+cards('#hudGrid',[['Vida (Health)','La parte blanca es tu vida normal y la rosa, vida extra. Al recibir daño pierdes primero la extra. La normal se regenera con el tiempo.'],['Resistencia (Stamina)','Se gasta al correr, pedalear o nadar. También podría afectar a tu fuerza cuerpo a cuerpo. Mejora con actividad física.'],['Concentración (Focus)','Ralentiza el tiempo para apuntar, observar el entorno, detectar alarmas o rastreadores y ver puntos débiles.'],['Pulmones y oxígeno','La capacidad pulmonar marca cuánto aguantas bajo el agua sin equipo. El oxígeno, cuánto aire queda en el tanque.'],['BankMe','Muestra tu dinero en el banco. Ese dinero podría estar protegido si mueres o te arrestan.']]);
+cards('#stars',[['★ Negra: bajo investigación','Hubo una denuncia, pero la policía aún no sabe quién eres.'],['★ Gris: te están buscando','Ya tienen tu descripción. Más estrellas significan más agentes y más tiempo de búsqueda.'],['★ Blanca: persecución activa','Saben dónde estás. Las estrellas marcan las unidades y la fuerza que usarán.'],['★ Parpadeante: los estás perdiendo','Ya no te ven. Si sigues oculto el tiempo suficiente, la persecución puede acabar.'],['★ Roja: terminó la persecución','Escapaste, pero siguen buscando. Si reconocen tu ropa, apariencia o vehículo, volverán a por ti.']]);
+$('#ids').innerHTML=[['Cámaras (CCTV)','Pueden grabar tu delito como evidencia.','Destruye la cámara o elimina la grabación.'],['Ropa','Reconocen lo que llevabas puesto.','Cámbiate sin que te vean.'],['Grupo','Saben que vas acompañado.','Sepárate de tu grupo fuera de su vista.'],['Vehículo','Reconocen el coche que usas.','Abandónalo. Si te ven subir a otro, también quedará marcado.'],['Apariencia','Te reconocen aunque cambies de ropa.','Cambia peinado, máscara o accesorios sin que te vean.']].map(r=>`<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('');
+cards('#profile',[['Perfil positivo','Ayudar a otros e incapacitar enemigos en vez de matarlos mejora tu reputación.'],['Perfil neutral','Punto intermedio. Aún no está claro cómo afecta a la historia o las mecánicas.'],['Perfil negativo','Matar, causar caos y actuar con violencia lo empeora.'],['Impacto blanco','Le diste al enemigo, sin matarlo ni incapacitarlo.'],['Impacto amarillo','Enemigo fuera de combate sin morir. Podría mejorar tu perfil.'],['Impacto rojo','Golpe mortal. Podría empeorar tu perfil criminal.']]);
+const maps=[['coleccionables','Coleccionables','Tres puntos de cartas: dos en el centro de la isla y uno en el puerto del norte.'],['dinero','Dinero','Vista combinada de cartas, cajeros, cajas y lugares con dinero.'],['ropa','Ropa','Cinco tiendas repartidas a lo largo de la isla.'],['vehiculos','Vehículos','Cargadores, gasolinera, autobuses, pintura, taller y coches destacados.'],['destacados','Coches destacados','Cuatro vehículos especiales en la isla.'],['tiendas','Tiendas','Bares, restaurante, licorerías, ropa, calzado, barbería y supermercados.'],['cajeros','Cajeros','Cajeros concentrados en el norte y el centro de la isla.'],['robos','Robos','Tiendas, cajeros, joyería, caja fuerte y otros objetivos.'],['waink','Waink','Puntos de Waink en la parte central y sur.']];
+$('#mapTabs').innerHTML=maps.map((m,i)=>`<button data-m="${i}">${m[1]}</button>`).join('');
+const showMap=i=>{const m=maps[i];$('#mapImg').src=`img/mapa-${m[0]}.jpg`;$('#mapImg').alt=`Mapa de Key Lento: ${m[1]}`;$('#mapTitle').textContent=m[1];$('#mapText').textContent=m[2];document.querySelectorAll('[data-m]').forEach((b,j)=>b.classList.toggle('on',j===i))};
+document.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>showMap(+b.dataset.m));showMap(0);
+$('#cars').innerHTML=[['elegy90','Annis Elegy ’90','Starfish Island','Busca el marcador turquesa.'],['drifter','Drifter Elegy','Gellhorn Raceway, Port Gellhorn','Busca los talleres detrás de la pista.'],['ruiner','Imponte Turbo Ruiner','Key Lento, Surfside Dr','Busca el marcador turquesa.'],['eclipse','Eclipse de Paul Walker','Vespucci Island, Rialto Islands','Es un Maibatsu Penumbra FF.'],['ruby','Royal Ruby Emerus','Mansión Vespucci','En el garaje junto a la entrada.'],['purple','Purple Drank Emerus','Waxman Island, Chatfield Storage','En la zona de contenedores.'],['caracara','Smuggler Caracara','Muelles de Port Gellhorn','Busca el icono amarillo.']].map(c=>`<article class="card car"><img loading="lazy" src="img/coche-${c[0]}.jpg" width="720" height="802" alt="${c[1]} y su ubicación en el mapa"><div><h3>${c[1]}</h3><p><b>${c[2]}</b><br>${c[3]}</p></div></article>`).join('');
+const col=[['Dr. Placebo','Ed Comics','La Perle'],['Katie K','Lucha','Starfish Island'],['Otis Adams','Vice City Narcos','Centro de Vice City'],['Oskar Wolff','Club de fútbol','Capri, en el tablón de anuncios'],['Dúo Desastroso: Ratface','Cómic','Playa al norte de Capri'],['Fornicator','Ed Comics','Costa frente a Crude Islands'],['They','Right Wing','Centro de Vice City'],['Dr. Placebo (variante)','Ed Comics','Stockyard, Decor District'],['Vanessa','Jack of Hearts','Dentro de una taquilla'],['Kadisha','Jack of Hearts','Al este de Port Gellhorn'],['Nicky McVee (firmada)','Vice City Narcos','Vice-Dale County, junto al aeropuerto']];
+const saved=(()=>{try{return JSON.parse(localStorage.getItem('gta6-cartas'))||[]}catch{return[]}})();
+$('#cardsGrid').innerHTML=col.map((c,i)=>`<label class="card check"><input type="checkbox" data-c="${i}" ${saved.includes(i)?'checked':''}><span><b>${i+1}. ${c[0]}</b><br><small>${c[1]}</small><p>${c[2]}</p></span></label>`).join('');
+const upd=()=>{const on=[...document.querySelectorAll('[data-c]:checked')].map(x=>+x.dataset.c);try{localStorage.setItem('gta6-cartas',JSON.stringify(on))}catch{}$('#bar').style.width=on.length/11*100+'%';$('#count').textContent=`${on.length} de 11 conseguidas`};document.querySelectorAll('[data-c]').forEach(x=>x.onchange=upd);upd();
+const sec=[['Baño secreto: resistencia para siempre',`<ol class="steps"><li>Ve a la islita de <b>Corsair Key</b> y entra en el baño público, el único edificio abierto.</li><li>No tires de la cadena. Escanea el <b>QR</b> del cartel.</li><li>Te llega un mensaje de felicitación. Responde <b>Truth</b>.</li><li>Ve a <b>Frank’s Waffles</b>, en Vice City, siéntate con el anciano y sigue la conversación.</li><li>Ve a la <b>planta de tratamiento</b>, sube por la escalera del lado derecho y baja la palanca del control de flujo.</li><li>Tira de la cadena cuando te lo pida.</li><li>Ignora el aviso y lánzate al <b>agua tóxica</b>. La corriente te lleva por la alcantarilla y apareces con la resistencia máxima aumentada.</li></ol>`],['Dos búnkeres de la Guerra Fría',`<p><b>Búnker 1, Sharktooth Island.</b> Código <span class="code">010317</span>. La pista está en el memorial de Vice City y las notas del apartamento. Dentro hay una caja fuerte con código <span class="code">2975</span> que guarda la <b>pistola 1922 del presidente Russo</b>.</p><p style="margin-top:9px"><b>Búnker 2, norte del condado de Mariana.</b> Código <span class="code">085355</span>, en los documentos del primer búnker. Recompensa: rifle de asalto <b>Cold War 556</b>.</p>`],['Laboratorio genético: dinero y subametralladora',`<ol class="steps"><li>Ve a la ubicación especial en la zona pantanosa del mapa y entra por la valla.</li><li>Activa la energía y entra a la oficina.</li><li>Inicia sesión en la computadora con la clave escrita en la madera de la habitación contigua.</li><li>En el laboratorio, lee la tablilla. La muestra resaltada como éxito es la <span class="code">0036</span>.</li><li>Úsala en la caja fuerte <b>Titanvault</b>. Dentro hay una nota de emergencia con <span class="code">02.12</span>.</li><li>Usa ese código en la puerta con teclado para llegar al muelle, con botín de <b>$10.000</b> y la subametralladora <b>VF5</b>.</li><li>En la zona también hay una moto de agua y un cangrejo gigante.</li></ol><p class="note">Pasos reconstruidos a partir de imágenes del vídeo. La clave de la computadora no se distingue bien, y los códigos 0036 y 02.12 conviene comprobarlos en el juego.</p>`],['Derrota a Satanás',`<p>Con Jason, visita la guarida de <b>Dave</b> y sigue al grupo hasta su furgoneta. Tras aceptar lo que te ofrecen, empieza un viaje alucinógeno en un claro con fuego y un árbol quemado, donde te enfrentas a un demonio gigante con una escopeta. Al final, despiertas en un claro con restos de la fiesta.</p><p class="note">Resumen hecho a partir de imágenes del vídeo, sin el audio. La ubicación exacta no aparece escrita.</p>`],['La sirena de la playa',`<p>En una isla con playa blanca, un personaje llamado <b>Tritón</b> espera bajo una sombrilla rosa, vestido de sirena, y te invita a escuchar su canto. Es un encuentro cómico.</p>`]];
+$('#secrets').innerHTML=sec.map((s,i)=>`<details ${i===0?'open':''}><summary>${s[0]}</summary>${s[1]}</details>`).join('');
+$('#menuBtn').onclick=()=>$('#nav').classList.toggle('open');$('#nav').onclick=e=>{if(e.target.tagName==='A')$('#nav').classList.remove('open')};
+const secs=[...document.querySelectorAll('main section')],links=[...document.querySelectorAll('nav a')];
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.hash==='#'+e.target.id))}),{rootMargin:'-20% 0px -70%'});secs.forEach(s=>io.observe(s));
+const norm=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+$('#q').oninput=e=>{const q=norm(e.target.value.trim());let any=false;secs.forEach(s=>{const items=s.querySelectorAll('.card,details,tbody tr');let hit=false;items.forEach(x=>{const m=!q||norm(x.textContent).includes(q);x.classList.toggle('hide',!m);if(m){hit=true;if(q&&x.tagName==='DETAILS')x.open=true}});const head=q&&norm(s.querySelector('h2').textContent).includes(q);if(head){items.forEach(x=>x.classList.remove('hide'));hit=true}s.classList.toggle('hide',!!q&&!hit);if(!q||hit)any=true});$('.hero').classList.toggle('hide',!!q);$('#fuentes').classList.toggle('hide',!!q);$('#empty').classList.toggle('hide',any)};
+</script>
+</body>
+</html>
